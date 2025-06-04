@@ -7,7 +7,12 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom"
   },
   "dependencies": {
     "@apollo/client": "^3.13.8",
@@ -29,6 +34,11 @@
     "globals": "^16.0.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vitest": "^1.5.0",
+    "@vitest/coverage-v8": "^1.5.0",
+    "@testing-library/react": "^14.2.1",
+    "@testing-library/jest-dom": "^6.4.4",
+    "jsdom": "^24.0.0"
   }
 }
