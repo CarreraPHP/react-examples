@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-import Carousel from '../components/carosaul'
+import Carousel from './index'
 import { vi } from 'vitest'
 
 const photos = [

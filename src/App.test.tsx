@@ -12,7 +12,7 @@ vi.mock('@apollo/client', () => ({
   gql: () => undefined,
 }))
 
-import App from '../App'
+import App from './App'
 
 afterEach(() => {
   vi.clearAllMocks()
@@ -25,6 +25,7 @@ test('home route', () => {
     </MemoryRouter>
   )
   expect(screen.getByText('Home')).toBeInTheDocument()
+  expect(screen.getByRole('link', { name: /todo list/i })).toBeInTheDocument()
 })
 
 test('todo route', async () => {

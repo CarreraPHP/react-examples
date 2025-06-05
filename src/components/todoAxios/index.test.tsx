@@ -1,5 +1,5 @@
 import { render, screen, waitFor } from '@testing-library/react'
-import TodoAxios from '../components/todoAxios'
+import TodoAxios from './index'
 import axios from 'axios'
 import { vi } from 'vitest'
 

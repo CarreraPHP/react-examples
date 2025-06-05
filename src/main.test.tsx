@@ -7,7 +7,7 @@ vi.mock('react-dom/client', () => ({
 
 document.body.innerHTML = '<div id="root"></div>'
 
-const mainImport = import('../main')
+const mainImport = import('./main')
 import { createRoot } from 'react-dom/client'
 
 test('main renders app', async () => {
