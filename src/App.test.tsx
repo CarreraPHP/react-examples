@@ -12,7 +12,7 @@ vi.mock('@apollo/client', () => ({
   gql: () => undefined,
 }))
 
-import App from '../App'
+import App from './App'
 
 afterEach(() => {
   vi.clearAllMocks()

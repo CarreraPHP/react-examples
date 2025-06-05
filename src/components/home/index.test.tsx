@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { MemoryRouter } from 'react-router'
-import Home from '../components/home'
+import Home from './index'
 
 test('renders navigation links', () => {
   render(

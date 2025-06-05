@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-import TodoList from '../components/todo'
+import TodoList from './index'
 import { vi } from 'vitest'
 
 const users = [

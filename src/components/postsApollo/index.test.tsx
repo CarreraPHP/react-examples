@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import ApolloPosts from '../components/postsApollo'
+import ApolloPosts from './index'
 import { vi } from 'vitest'
 
 vi.mock('@apollo/client', () => ({
