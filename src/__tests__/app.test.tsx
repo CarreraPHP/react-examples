@@ -25,6 +25,7 @@ test('home route', () => {
     </MemoryRouter>
   )
   expect(screen.getByText('Home')).toBeInTheDocument()
+  expect(screen.getByRole('link', { name: /todo list/i })).toBeInTheDocument()
 })
 
 test('todo route', async () => {

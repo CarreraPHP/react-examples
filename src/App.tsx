@@ -3,6 +3,7 @@ import TodoList from "./components/todo"
 import ImageCarousel from "./components/carosaul"
 import ApolloPosts from "./components/postsApollo"
 import TodoAxios from "./components/todoAxios"
+import Home from "./components/home"
 import './App.css'
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
 
   return (
     <Routes>
-      <Route index element={<h1>Home</h1>} />
+      <Route index element={<Home />} />
       <Route path="todo" element={<TodoList />} />
       <Route path="carousel" element={<ImageCarousel />} />
       <Route path="graphql-posts" element={<ApolloPosts />} />
